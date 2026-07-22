@@ -13,5 +13,6 @@ def getfile(file_name : str, q : str):
     else :
         return "拒绝访问"
 
-
-
+@app.get("/test")
+def testfun():
+    return "scussesfully loaded the data"
